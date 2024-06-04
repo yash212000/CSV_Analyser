@@ -11,7 +11,7 @@ import key
 matplotlib.use('TkAgg') #using python tkinter API
 
 
-os.environ['OPENAI_API_KEY'] = key.key_openai
+# os.environ['OPENAI_API_KEY'] = key.key_openai
 llm = OpenAI(temperature=0.7)
 pandas_ai = PandasAI(llm)
 st.title("Prompt Driven CSV Analyser")
